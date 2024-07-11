@@ -1,0 +1,212 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*--------------------- Mobil  */
+
+.header {
+  width: 86.66px;
+  margin: 50px auto 40px auto;
+}
+
+.calculate-container {
+  margin: 0 auto;
+  padding-block: 32px;
+  background-color: #ffffff;
+  box-shadow: 0px 32px 43px 0px #4fa6af33;
+  border-radius: 16px 16px 0 0;
+}
+
+.calculate {
+  width: 311px;
+  margin: 0 auto;
+}
+
+.calculate h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  text-align: left;
+  color: #5e7a7d;
+  margin-bottom: 6px;
+}
+.calculate input {
+  width: 311px;
+  background-color: #f3f9fa;
+  padding: 6px 17px 6px 17px;
+  margin-bottom: 32px;
+  border: none;
+}
+
+.select-tip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.select-tip button {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #00474b;
+  border: none;
+  border-radius: 8px;
+}
+
+.calc-tip-container {
+  width: 327px;
+  margin: 0 auto;
+  background-color: #00474b;
+  border-radius: 16px;
+  padding-block: 30px;
+}
+
+.calc-tip-box {
+  margin-bottom: 122px;
+}
+
+.calc-text {
+  margin-bottom: 25px;
+}
+.calc-text span {
+font-size: 32px;
+font-weight: 700;
+line-height: 47.39px;
+text-align: right;
+color: #26C2AE;
+}
+
+.calc-text h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.calc-text h5 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.25px;
+  text-align: left;
+  color: #7F9D9F;
+}
+
+
+.calc-tip-container button{
+  width: 281px;
+  margin-inline: 23px;
+  color: #00474b;
+  background-color: #26c2ae;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29.62px;
+  text-align: center;
+  padding-block: 9px;
+  border: none;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+/* ------------------------------------------mobil bitişi */
+@media (width >= 1024px) {
+  .calculate-container {
+    margin: 0 auto;
+    width: 920px;
+    display: flex;
+    align-items: center;
+    padding-block: 87px;
+    background-color: #ffffff;
+    box-shadow: 0px 32px 43px 0px #4fa6af33;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .calculate input {
+    width: 379px;
+    background-color: #f3f9fa;
+    border: 1px solid #f3f9fa;
+    margin-bottom: 40px;
+    cursor: pointer;
+    padding: 6px 17px 6px 17px;
+  }
+  .calculate input:hover {
+    border: 2px solid #26c2ae;
+  }
+  
+  .select-tip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+  .select-tip button {
+    width: 117px;
+    padding: 6px 14px 6px 13px;
+    background-color: #00474b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .select-tip button:hover {
+    background-color: #26c2ae;
+  }
+  
+  .calc-tip-container {
+    width: 413px;
+    margin: 32px 32px 32px 48px;
+    background-color: #00474b;
+    padding: 40px 40px 40px 40px;
+    border-radius: 10px;
+    border: 1px solid #00474b;
+  }
+
+  .calc-tip-container button:hover {
+    background-color: #9FE8DF;
+  }
+
+}
